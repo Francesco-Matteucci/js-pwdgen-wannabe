@@ -1,3 +1,62 @@
 .card .card-img-top {
     width: 500px;
 }
+
+
+/* V2 */
+
+* {
+    font-family: sans-serif;
+}
+
+
+.gif {
+    height: 200px;
+    min-width: auto;
+    border-radius: 20px;
+}
+
+.funny-content {
+    gap: 24px;
+}
+
+.btn-group {
+    gap: 8px;
+}
+
+.btn {
+    width: 120px;
+    height: 48px;
+    background: linear-gradient(to top, white, darken(white, 4%));
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 16px fade(black, 20%);
+    border: 2px solid rgb(128, 128, 128);
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid rgb(128, 128, 128);
+}
+
+.btn p {
+    font-weight: 600;
+}
+
+.btn:nth-child(1) {
+    background: linear-gradient(to top, #ff457d, lighten(#ff457d, 5%));
+}
+
+.btn:nth-child(1):hover {
+    background: #ba305a;
+}
+
+
+.floating {
+    --x: 0px;
+    --y: 0px;
+
+    transform: translate(var(--x), var(--y));
+}

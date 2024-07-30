@@ -42,3 +42,41 @@ window.alert("Perfetto, e adesso goditi la tua password inespugnabile (!!)");
 //!FASE DI OUTPUT
 
 resultElement.innerHTML = `<strong>${firstName}${lastName}${favColor}21</strong>`;
+
+
+
+// --------------------------------V2--------------------------------------------------------- 
+
+
+const maxHeight = document.querySelector(".funny-content").clientHeight;
+const maxWidth = document.querySelector(".funny-content").clientWidth;
+
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * ((max - 120) - min + 20) + min)
+}
+
+document.querySelector("#no").addEventListener("click", () => {
+
+    document.querySelector(".gif").src = "https://media.tenor.com/jsQumF2np4kAAAAC/bear-shocked.gif";
+
+    document.querySelector("h2").innerHTML = "COSAAAA, by the way.. im the best!";
+
+})
+
+document.querySelector("#yes").addEventListener("click", () => {
+
+    document.querySelector(".gif").src = "https://media.tenor.com/KFkmX5T_5LEAAAAC/love-you-brown-bear.gif";
+    document.querySelector("h2").innerHTML = "Yayyy!";
+
+})
+
+const noBtn = document.querySelector("#no");
+noBtn.addEventListener("mouseover", () => {
+
+
+    noBtn.style.setProperty("--x", `${getRandomNumber(-maxWidth / 2 + 60, maxWidth / 2 - 60)}px`);
+    noBtn.style.setProperty("--y", `${getRandomNumber(-maxWidth / 2 + 60, maxHeight / 2 - 60)}px`);
+
+}
+
+);
